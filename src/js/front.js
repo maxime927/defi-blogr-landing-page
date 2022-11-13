@@ -8,10 +8,17 @@ $(document).ready(function () {
   let btnMenu = $('.btn-menu');
   btnMenu.click(function() {
     $('.header-wrap').toggleClass('opened');
-    $('html, body').toggleClass('overflow');
+    //$('html, body').toggleClass('overflow');
     $('.header-nav').toggleClass('opened');
+
+    $('.has-children').removeClass('active');
   });
 
+  // Submenu
+  let lvl0menu = $('.has-children');
+  lvl0menu.click(function(){
+    $(this).toggleClass('active')
+  });
 });
 
 // Passive event listeners

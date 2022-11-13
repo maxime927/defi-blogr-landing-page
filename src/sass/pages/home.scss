@@ -30,7 +30,7 @@
 
   // Second section
   .second-block {
-    position: relative; padding: rem(100spx) 0 rem(70px); text-align: center;
+    position: relative; padding: rem(100px) 0 rem(70px); text-align: center;
     @include min(md){ padding: rem(150px) 0 rem(250px); overflow: hidden; }
 
     h2 {
