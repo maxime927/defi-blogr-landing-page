@@ -1,0 +1,136 @@
+/* ---- Home ---- */
+.home-wrap {
+
+  // First section (Heading)
+  .heading {
+    position: relative; overflow: hidden; background-color: $red; min-height: 600px; text-align: center; display: flex; align-items: center; justify-content: center; background:linear-gradient(0deg, $red 0%, $orange 80%); border-radius: 0 0 0 95px; padding-top: rem(40px);
+    @include min(md){ background-color: $orange; background: linear-gradient(90deg, $orange 0%, $red 80%); padding-top: rem(75px);}
+
+    &::before {
+      content: ''; position: absolute; z-index: 1; pointer-events: none; left: 0; top: -257px; right: -218px; bottom: 0; background-image: url('../img/bg-pattern-intro-mobile.svg'); background-repeat: no-repeat; background-size: 231%; background-position: top center;
+      @include min(md){ left: 5vw; top: -10px; right: -59vw; bottom: 0; background-image: url('../img/bg-pattern-intro-desktop.svg'); background-size: 120%; background-position: center right; }
+    }
+
+    h1 {
+      position: relative; z-index: 2; color: $white; padding: 0 rem(7px); font-size: rem(34px); margin-bottom: rem(15px);
+      @include min(md){ font-size: rem(59px); }
+    }
+    p { position: relative; z-index: 2; color: $white; padding: 0 rem(27px); font-size: rem(17px); margin:0;
+      @include min(md){ font-size: rem(20px)}
+    }
+    .btns {
+      margin-top: rem(45px); position: relative; z-index: 2;
+
+      .btn {
+         margin: 0 7px; width: 135px;
+         @include min(md){ margin: 0 8px;}
+      }
+    }
+  }
+
+  // Second section
+  .second-block {
+    position: relative; padding: rem(100spx) 0 rem(70px); text-align: center;
+    @include min(md){ padding: rem(150px) 0 rem(250px); overflow: hidden; }
+
+    h2 {
+      font-size: rem(26px); margin-bottom: rem(45px); font-weight: 700; color: $dark-blue;
+      @include min(md){ margin-bottom: rem(100px); font-size: rem(37px); }
+    }
+    .flexbox {
+      @include min(md){ display: flex; flex-flow: row-reverse; justify-content: space-between;}
+
+      .picture {
+        margin-bottom: rem(45px);
+        @include min(md){ width: calc(50% - 5px); margin-bottom: 0; }
+
+        figure {
+          margin: 0;
+          @include min(md){ position: absolute; left: calc(50% + 100px); top: 10%; bottom: 10%; width: 52vw; display: flex; align-items: center;  }
+
+          img { display: block; width: 100%; width: calc(100% + 46px); margin-left: rem(-23px); max-width: calc(100% + 46px);
+            @include min(md){ width: 100%; max-width: 100%; margin-left: 0; }
+          }
+        }
+      }
+      .text {
+        @include min(md){ width: calc(50% - 5px); text-align: left; }
+
+        h3 {
+          font-size: rem(28px); margin-bottom: rem(14px); margin-top: rem(45px); font-weight: 700; color: $dark-blue; padding: 0 rem(5px);
+          @include min(md){ font-size: rem(28px); margin-bottom: rem(27px); margin-top: rem(70px); padding: 0; }
+
+          &:first-child { margin-top: 0; }
+        }
+        p { color: $dark-grey; font-size: rem(16px); line-height: rem(28px); margin: 0; }
+      }
+    }
+  }
+
+  // Third section
+  .third-block { position: relative;
+
+    .picture {
+      margin-bottom: rem(-220px); position: relative; z-index: 2;
+      @include min(md){ margin-bottom: 0; position: absolute; top: 50%; transform: translateY(-50%); left: calc(50% - (1110px / 2) - 40px); }
+
+      figure { margin: 0;
+        img { display: block; margin: 0 auto; }
+      }
+    }
+
+    .text-wrapper {
+      position: relative; overflow: hidden; background-color: $dark-blue-2; background: linear-gradient(90deg, $dark-blue-2 0%, $dark-blue-3 100%); border-radius: 0 100px 0 100px; padding: rem(220px) 0 rem(115px);
+      @include min(md){ padding: rem(110px) 0; }
+
+      &::before {
+        content: ''; position: absolute; left: 0; top: 0; right: 0; height: 350px; background-image: url('../img/bg-pattern-circles.svg'); background-position: bottom center; background-repeat: no-repeat; background-size: 155%;
+        @include min(md){ right: 40%; height: calc(100% + 120px); background-position: right bottom; background-size: 130%; }
+      }
+
+      .text {
+        text-align: center; position: relative; z-index: 2;
+        @include min(md){ text-align: left; width: calc(50% - 15px); float: right; }
+
+        h2 { color: $white; margin-bottom: rem(20px); font-size: rem(37px);
+          @include min(md){ font-size: rem(37px); }
+        }
+        p { color: $white; line-height: rem(28px); margin: 0; }
+      }
+    }
+  }
+
+  // Fourth section
+  .fourth-block {
+    position: relative; padding: rem(95px) 0 rem(70px); text-align: center;
+    @include min(md){ padding: rem(250px) 0 rem(250px); overflow: hidden; }
+
+    .flexbox {
+      @include min(md){ display: flex; flex-flow: row; justify-content: space-between;}
+      .picture {
+        margin-bottom: rem(45px);
+        @include min(md){ width: calc(50% - 5px); margin-bottom: 0; }
+
+        figure {
+          margin: 0;
+          @include min(md){ position: absolute; right: 50%; top: 10%; bottom: 10%; width: 52vw; display: flex; align-items: center;  }
+          img { display: block; width: 100%; width: calc(100% + 46px); margin-left: rem(-23px); max-width: calc(100% + 46px);
+            @include min(md){ width: 100%; max-width: 100%; margin-left: 0; }
+          }
+        }
+      }
+      .text {
+        @include min(md){ width: calc(50% - 15px); text-align: left; }
+
+        h3 {
+          font-size: rem(28px); margin-bottom: rem(14px); margin-top: rem(45px); font-weight: 700; color: $dark-blue; padding: 0 rem(5px);
+          @include min(md){ font-size: rem(28px); margin-bottom: rem(27px); margin-top: rem(70px); padding: 0; }
+
+          &:first-child { margin-top: 0; }
+        }
+        p { color: $dark-grey; font-size: rem(16px); line-height: rem(28px); }
+      }
+    }
+  }
+
+}

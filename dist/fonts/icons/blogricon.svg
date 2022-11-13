@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="blogricon" horiz-adv-x="46.22222222222222">
+    <font-face font-family="blogricon"
+      units-per-em="26" ascent="26"
+      descent="0"
+      font-weight="1001" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="arrow-dark"
+      unicode="&#xE001;"
+      horiz-adv-x="37.142857142857146" d="" />
+    <glyph glyph-name="arrow-down"
+      unicode="&#xE002;"
+      horiz-adv-x="40.06557377049181" d="M20.0327868852459 0L0 20.0327868852459L5.9672131147541 26L20.0327868852459 11.9344262295082L34.0983606557377 26L40.0655737704918 20.0327868852459z" />
+    <glyph glyph-name="close"
+      unicode="&#xE003;"
+      horiz-adv-x="26" d="M23.6065 25.02L25.0205 23.607L14.4135 13L25.0205 2.393L23.6065 0.979L12.9995 11.586L2.3925 0.979L0.9795 2.393L11.5855 13L0.9795 23.607L2.3925 25.02L12.9995 14.414L23.6065 25.02z" />
+    <glyph glyph-name="hamburger"
+      unicode="&#xE004;"
+      horiz-adv-x="46.22222222222222" d="M0 26H46.2222222222222V23.1111111111111H0zM0 14.4444444444444H46.2222222222222V11.5555555555556H0zM0 2.8888888888889H46.2222222222222V0H0z" />
+  </font>
+</defs>
+</svg>
